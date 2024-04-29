@@ -1,0 +1,84 @@
+.pagination {
+	width: 100%;
+	border-top: 1px solid #eee;
+	border-right: 1px solid #eee;
+	background-color: #fcfcfc;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	position: sticky;
+	left: 0;
+	top: 0;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.padding-20 {
+	padding: 20px;
+}
+
+.justify-space-between {
+	justify-content: space-between;
+	flex-basis: 50%;
+	align-items: center;
+}
+
+.arrows {
+	padding: 0 10px;
+}
+
+.arrows button svg,
+.jump-block button svg {
+	vertical-align: middle;
+}
+
+.pages {
+	border-right: 1px solid #eee;
+	border-left: 1px solid #eee;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+
+.input {
+	border: 1px solid #eee;
+	width: 40px;
+	height: 40px;
+	background-color: transparent;
+	border-radius: 5px;
+	margin-left: 10px;
+	text-align: center;
+}
+
+.page-size {
+	padding: 0 20px;
+}
+
+.page-size > strong {
+	margin-right: 10px;
+}
+
+.page-size-button {
+	width: 40px;
+	height: 40px;
+	border-radius: 5px;
+}
+
+.jump-block {
+	display: flex;
+	align-items: center;
+}
+
+.jump-block button {
+	width: 40px;
+	height: 40px;
+	margin-left: 10px;
+}
+
+.icon {
+	rotate: 90deg;
+}
+
+button.checked {
+	background-color: #29cd83;
+}

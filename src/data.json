@@ -1,0 +1,86 @@
+{
+	"data": [
+		{
+			"id": 1,
+			"fullName": "Aurimas Urbonas",
+			"department": "department",
+			"userStatus": "Active",
+			"jobTitle": "gydytojas",
+			"healthChecks": [
+				{
+					"title": "Psichinės sveikatos patikra",
+					"code": "0000",
+					"expiredDate": "2024-12-28",
+					"status": "Valid"
+				},
+				{
+					"title": "Psichinės sveikatos patikra",
+					"code": "0001",
+					"expiredDate": "2024-12-28",
+					"status": "Valid"
+				},
+				{
+					"title": "Darbo prie kompiuterio pazyma",
+					"code": "0002",
+					"expiredDate": "2024-12-28",
+					"status": "Expired"
+				}
+			]
+		},
+		{
+			"id": 2,
+			"fullName": "Domantas Didziapetris",
+			"department": "department",
+			"userStatus": "Active",
+			"jobTitle": "programuotojas",
+			"healthChecks": [
+				{
+					"title": "Psichinės sveikatos patikra",
+					"code": "0000",
+					"expiredDate": "2024-12-28",
+					"status": "Valid"
+				},
+				{
+					"title": "Psichinės sveikatos patikra",
+					"code": "0001",
+					"expiredDate": "2024-12-28",
+					"status": "Valid"
+				},
+				{
+					"title": "Darbo prie kompiuterio pazyma",
+					"code": "0002",
+					"expiredDate": "2024-12-28",
+					"status": "Expired"
+				}
+			]
+		},
+		{
+			"id": 3,
+			"fullName": "Renatas Lauzadis",
+			"department": "departament",
+			"userStatus": "Active",
+			"jobTitle": "gydytojas",
+			"healthChecks": [
+				{
+					"title": "Psichinės sveikatos patikra",
+					"code": "0000",
+					"expiredDate": "2024-12-28",
+					"status": "Canceled"
+				},
+				{
+					"title": "Psichinės sveikatos patikra",
+					"code": "0001",
+					"expiredDate": "2024-12-28",
+					"status": "Canceled"
+				},
+				{
+					"title": "Darbo prie kompiuterio pazyma",
+					"code": "0002",
+					"expiredDate": "2024-12-28",
+					"status": "Expired"
+				}
+			]
+		}
+	],
+	"totalCount": 3
+}
