@@ -20,6 +20,9 @@ export default function App() {
 	const table = useReactTable({
 		data,
 		columns: columns as ColumnDef<IUser, any>[],
+		defaultColumn: {
+			size: 50,
+		},
 		initialState: {
 			columnPinning: {
 				left: ['check-box'],
@@ -40,7 +43,7 @@ export default function App() {
 	return (
 		<div className='container'>
 			<div className='table-wrapper'>
-				<table>
+				<table style={{ width: table.getTotalSize() }}>
 					<thead>
 						{table.getHeaderGroups().map(headerGroup => (
 							<tr key={headerGroup.id}>
