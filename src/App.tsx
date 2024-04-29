@@ -6,23 +6,49 @@ import {
 	getPaginationRowModel,
 	useReactTable,
 } from '@tanstack/react-table'
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 import { columns } from './components/Columns/Columns'
 import Pagination from './components/Pagination/Pagination'
 import dataJson from './data.json'
 import './index.css'
-import { IUser } from './typing'
+import { ISortData, IUser } from './typing'
 import { getCommonPinningStyles } from './utils/getCommonPinningStyles'
+
+const sortingData = (data: IUser[]) => {
+	const sortedData = data.reduce((acc, cur) => {
+		const i = acc.findIndex(
+			(item: { personalCode: string }) => item.personalCode === cur.personalCode
+		)
+
+		if (i >= 0) {
+			acc[i].data.push(cur)
+			return acc
+		}
+
+		return [...acc, { personalCode: cur.personalCode, data: [cur] }]
+	}, [] as ISortData[])
+
+	return sortedData.map(item => {
+		return {
+			fullName: item.data.map(item => item.fullName)[0],
+			department: item.data.map(item => item.department)[0],
+			userStatus: item.data.map(item => item.userStatus)[0],
+			jobTitle: item.data.map(item => item.jobTitle)[0],
+			healthChecks: item.data.map(item => ({
+				title: item.title,
+				code: item.code,
+				expiredDate: item.expiredDate,
+				status: item.status,
+			})),
+		}
+	})
+}
 
 export default function App() {
 	const [data] = useState<IUser[]>(dataJson.data)
-
 	const table = useReactTable({
-		data,
-		columns: columns as ColumnDef<IUser, any>[],
-		defaultColumn: {
-			size: 50,
-		},
+		data: useMemo(() => sortingData(data), [data]),
+		columns: columns as ColumnDef<any>[],
 		initialState: {
 			columnPinning: {
 				left: ['check-box'],

@@ -4,15 +4,32 @@ export interface IUsers {
 }
 
 export interface IUser {
-	id: number
+	personalCode: string
 	fullName: string
 	department?: string
 	userStatus: string
 	jobTitle?: string
-	healthChecks: IHealthCheck[]
+	title: string
+	code: string
+	expiredDate: string
+	status: string
 }
 
-export interface IHealthCheck {
+export interface ISortData {
+	personalCode: string
+	data: IUser[]
+}
+
+export interface ISortedData {
+	personalCode: string
+	fullName: string
+	department?: string
+	userStatus: string
+	jobTitle?: string
+	healthChecks: IHealthChecks[]
+}
+
+export interface IHealthChecks {
 	title: string
 	code: string
 	expiredDate: string

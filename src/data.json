@@ -1,85 +1,107 @@
 {
 	"data": [
 		{
-			"id": 1,
+			"personalCode": "111",
 			"fullName": "Aurimas Urbonas",
 			"department": "department",
 			"userStatus": "Active",
 			"jobTitle": "gydytojas",
-			"healthChecks": [
-				{
-					"title": "Psichinės sveikatos patikra",
-					"code": "0000",
-					"expiredDate": "2024-12-28",
-					"status": "Valid"
-				},
-				{
-					"title": "Psichinės sveikatos patikra",
-					"code": "0001",
-					"expiredDate": "2024-12-28",
-					"status": "Valid"
-				},
-				{
-					"title": "Darbo prie kompiuterio pazyma",
-					"code": "0002",
-					"expiredDate": "2024-12-28",
-					"status": "Expired"
-				}
-			]
+			"title": "Psichinės sveikatos patikra",
+			"code": "0000",
+			"expiredDate": "2024-12-28",
+			"status": "Valid"
 		},
+
 		{
-			"id": 2,
-			"fullName": "Domantas Didziapetris",
+			"personalCode": "111",
+			"fullName": "Aurimas Urbonas",
 			"department": "department",
 			"userStatus": "Active",
-			"jobTitle": "programuotojas",
-			"healthChecks": [
-				{
-					"title": "Psichinės sveikatos patikra",
-					"code": "0000",
-					"expiredDate": "2024-12-28",
-					"status": "Valid"
-				},
-				{
-					"title": "Psichinės sveikatos patikra",
-					"code": "0001",
-					"expiredDate": "2024-12-28",
-					"status": "Valid"
-				},
-				{
-					"title": "Darbo prie kompiuterio pazyma",
-					"code": "0002",
-					"expiredDate": "2024-12-28",
-					"status": "Expired"
-				}
-			]
+			"jobTitle": "gydytojas",
+			"title": "Darbo prie kompiuterio pazyma",
+			"code": "0002",
+			"expiredDate": "2024-12-28",
+			"status": "Expired"
 		},
 		{
-			"id": 3,
+			"personalCode": "333",
 			"fullName": "Renatas Lauzadis",
 			"department": "departament",
 			"userStatus": "Active",
 			"jobTitle": "gydytojas",
-			"healthChecks": [
-				{
-					"title": "Psichinės sveikatos patikra",
-					"code": "0000",
-					"expiredDate": "2024-12-28",
-					"status": "Canceled"
-				},
-				{
-					"title": "Psichinės sveikatos patikra",
-					"code": "0001",
-					"expiredDate": "2024-12-28",
-					"status": "Canceled"
-				},
-				{
-					"title": "Darbo prie kompiuterio pazyma",
-					"code": "0002",
-					"expiredDate": "2024-12-28",
-					"status": "Expired"
-				}
-			]
+			"title": "Darbo prie kompiuterio pazyma",
+			"code": "0002",
+			"expiredDate": "2024-12-28",
+			"status": "Expired"
+		},
+
+		{
+			"personalCode": "222",
+			"fullName": "Domantas Didziapetris",
+			"department": "department",
+			"userStatus": "Active",
+			"jobTitle": "programuotojas",
+			"title": "Psichinės sveikatos patikra",
+			"code": "0000",
+			"expiredDate": "2024-12-28",
+			"status": "Valid"
+		},
+		{
+			"personalCode": "222",
+			"fullName": "Domantas Didziapetris",
+			"department": "department",
+			"userStatus": "Active",
+			"jobTitle": "programuotojas",
+			"title": "Psichinės sveikatos patikra",
+			"code": "0001",
+			"expiredDate": "2024-12-28",
+			"status": "Valid"
+		},
+		{
+			"personalCode": "222",
+			"fullName": "Domantas Didziapetris",
+			"department": "department",
+			"userStatus": "Active",
+			"jobTitle": "programuotojas",
+			"title": "Darbo prie kompiuterio pazyma",
+			"code": "0002",
+			"expiredDate": "2024-12-28",
+			"status": "Expired"
+		},
+
+		{
+			"personalCode": "333",
+			"fullName": "Renatas Lauzadis",
+			"department": "departament",
+			"userStatus": "Active",
+			"jobTitle": "gydytojas",
+			"title": "Psichinės sveikatos patikra",
+			"code": "0000",
+			"expiredDate": "2024-12-28",
+			"status": "Canceled"
+		},
+		{
+			"personalCode": "333",
+			"fullName": "Renatas Lauzadis",
+			"department": "departament",
+			"userStatus": "Active",
+			"jobTitle": "gydytojas",
+			"title": "Psichinės sveikatos patikra",
+			"code": "0001",
+			"expiredDate": "2024-12-28",
+			"status": "Canceled"
+		},
+
+		{
+			"personalCode": "111",
+			"fullName": "Aurimas Urbonas",
+			"department": "department",
+			"userStatus": "Active",
+			"jobTitle": "gydytojas",
+			"title": "Psichinės sveikatos patikra",
+			"code": "0001",
+			"expiredDate": "2024-12-28",
+			"status": "Valid"
 		}
 	],
 	"totalCount": 3

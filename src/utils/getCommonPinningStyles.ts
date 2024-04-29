@@ -1,9 +1,9 @@
 import { Column } from '@tanstack/react-table'
 import { CSSProperties } from 'react'
-import { IUser } from '../typing'
+import { IHealthChecks, ISortedData } from '../typing'
 
 export const getCommonPinningStyles = (
-	column: Column<IUser>
+	column: Column<ISortedData & IHealthChecks>
 ): CSSProperties => {
 	const isPinned = column.getIsPinned()
 

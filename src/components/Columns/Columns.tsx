@@ -1,16 +1,16 @@
 import { ColumnDef } from '@tanstack/react-table'
 import { ReactNode } from 'react'
-import { FaAngleDown, FaAngleUp } from 'react-icons/fa'
+import { FaAngleDown, FaAngleUp } from 'react-icons/fa6'
 import { IoReload } from 'react-icons/io5'
-import { IHealthCheck, IUser } from '../../typing'
+import { IHealthChecks, ISortedData } from '../../typing'
 import { Checkbox } from '../Checkbox/Checkbox'
 import Popover from '../Popover/Popover'
 import { Status } from '../Status/Status'
 
-export const columns: ColumnDef<IUser & IHealthCheck>[] = [
+export const columns: ColumnDef<ISortedData & IHealthChecks>[] = [
 	{
 		id: 'check-box',
-		size: 50,
+		size: 30,
 		header: ({ table }) => (
 			<Checkbox
 				checked={table.getIsAllRowsSelected()}
@@ -29,7 +29,6 @@ export const columns: ColumnDef<IUser & IHealthCheck>[] = [
 	{
 		accessorFn: row => row.fullName || row.title,
 		id: 'fullName',
-		size: 300,
 		header: () => 'Full name / Health check',
 		cell: ({ row, getValue }) => (
 			<div className='flex'>
@@ -92,7 +91,7 @@ export const columns: ColumnDef<IUser & IHealthCheck>[] = [
 	},
 	{
 		id: 'actions',
-		size: 50,
+		size: 30,
 		header: () => (
 			<button onClick={() => {}}>
 				<IoReload />
