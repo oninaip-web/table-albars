@@ -29,6 +29,7 @@ export default function App() {
 				pageSize: 25,
 			},
 		},
+
 		columnResizeMode: 'onChange',
 		getSubRows: (row: any) => row.healthChecks,
 		getCoreRowModel: getCoreRowModel(),
@@ -75,7 +76,10 @@ export default function App() {
 					<tbody>
 						{table.getRowModel().rows.map(row => {
 							return (
-								<tr key={row.id}>
+								<tr
+									key={row.id}
+									className={row.getIsExpanded() ? 'expanded' : ''}
+								>
 									{row.getVisibleCells().map(cell => {
 										return (
 											<td
